@@ -1,0 +1,54 @@
+<script>
+    /*
+    PROBLEMA: DESCONTO COMBUSTÍVEL
+    Um posto está vendendo combustíveis com a seguinte tabela de descontos:
+    Álcool:
+    - até 20 litros, desconto de 3% por litro
+    - acima de 20 litros, desconto de 5% por litro
+
+    Gasolina:
+    - até 20 litros, desconto de 4% por litro
+    - acima de 20 litros, desconto de 6% por litro
+    
+    Escreva um algoritmo que leia o número de litros vendidos, o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina),
+    calcule e imprima o valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 6,50 o preço do litro do álcool é R$ 6,10.
+    */
+
+    //ENTRADA
+    const litros = Number(prompt("Informe quantos litros de combustível foram vendidos: "));
+    const tipoCombustivel = prompt("Informe o tipo de combustível: A-álcool, G-gasolina");
+
+    //PROCESSAMENTO
+    if (tipoCombustivel === "A" && litros <= 20) {
+        const desconto = (6.1 * 3) / 100;
+        const valorComDesconto = 6.1 - desconto;
+        const valorFinal = litros * valorComDesconto;
+        alert(`O valor a ser pago pelo cliente é de: R$${valorFinal.toFixed(2).replace("." , ",")}`)
+    }
+    else if (tipoCombustivel === "A " && litros >= 20) {
+        const desconto = (6.1 * 5) / 100;
+        const valorComDesconto = 6.1 - desconto;
+        const valorFinal = litros * valorComDesconto;
+        alert(`O valor a ser pago pelo cliente é de: R$${valorFinal.toFixed(2).replace("." , ",")}`)
+    }
+
+    else if (tipoCombustivel === "G" && litros >= 20) {
+        const desconto = (6.5 * 6) / 100;
+        const valorComDesconto = 6.5 - desconto;
+        const valorFinal = litros * valorComDesconto;
+        alert(`O valor a ser pago pelo cliente é de: R$${valorFinal.toFixed(2).replace("." , ",")}`)
+    }
+
+    else if (tipoCombustivel === "G" && litros <= 20) {
+        const desconto = (6.5 * 4) / 100;
+        const valorComDesconto = 6.5 - desconto;
+        const valorFinal = litros * valorComDesconto;
+        alert(`O valor a ser pago pelo cliente é de: R$${valorFinal.toFixed(2).replace("." , ",")}`)
+    }
+    else {
+        alert(`Valor inválido`)
+    }
+
+    //SAÍDA
+
+</script>
