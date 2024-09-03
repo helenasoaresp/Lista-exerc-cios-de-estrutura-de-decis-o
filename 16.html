@@ -6,10 +6,15 @@
     */
 
     //ENTRADA
-
+    const ano = Number(prompt("Informe o ano atual: "));
     
     //PROCESSAMENTO
-
+    if (ano % 4 === 0) {
+        alert(`${ano} é um ano bissexto`)
+    }
+    else {
+        alert(`${ano} não é um ano bissexto`)
+    }
     
     //SAÍDA
 

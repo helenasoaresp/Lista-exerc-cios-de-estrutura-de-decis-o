@@ -12,10 +12,24 @@
     */
 
     //ENTRADA
-
+    const nota = Number(prompt(`Informe sua nota: `));
     
     //PROCESSAMENTO
-
+    if (nota <= 10 && nota >= 9) {
+    alert(`Conceito A`);
+    }
+    else if (nota <= 8.9 && nota >= 8) {
+    alert(`Conceito B`);
+    }
+    else if (nota <= 7.9 && nota >= 7) {
+        alert(`Conceito C`);
+    }
+    else if (nota <= 6.9 && nota >= 6) {
+        alert(`Conceito D`);
+    }
+    else {
+        alert(`Conceito E`);
+    }
     
     //SAÍDA
 

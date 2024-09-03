@@ -11,13 +11,42 @@
     //ENTRADA 
     const num1 = Number(prompt("Informe um número: "));
     const num2 = Number(prompt("Informe outro número: "));
-    const operacao = Number(prompt("Informe a operação que deseja usar: m "));
+    const operacao = Number(prompt("Informe a operação que deseja usar:  "));
     
     //PROCESSAMENTO
-    if (operacao == "+" ) {
-        const soma = num1 + num2;
-        if (soma >= 0 % 2 === 0);
-    }
-    //SAÍDA
+    const soma = num1 + num2;
 
+
+    //SAÍDA
+    if (operacao == "+" && soma >= 0 && soma && soma % 2 === 0 && soma % 1 === 0) {
+        alert(`<ul>
+            <li>${soma} é um número positivo</li>
+            <li>${soma} é um número par</li>
+            <li>${soma} é um número inteiro</li>
+        `);
+    }
+
+    else if (operacao == "+" && soma < 0 && soma && soma % 2 === 0 && soma % 1 === 0) {
+        alert(`<ul>
+            <li>${soma} é um número negativo</li>
+            <li>${soma} é um número par</li>
+            <li>${soma} é um número inteiro</li>
+        `);
+    }
+
+    else if (operacao == "+" && soma >= 0 && soma && soma % 2 === 0 && soma % 1 === 0) {
+        alert(`<ul>
+            <li>${soma} é um número positivo</li>
+            <li>${soma} é um número par</li>
+            <li>${soma} é um número inteiro</li>
+        `);
+    }
+
+    if (operacao == "+" && soma >= 0 && soma && soma % 2 === 0 && soma % 1 === 0) {
+        alert(`<ul>
+            <li>${soma} é um número positivo</li>
+            <li>${soma} é um número par</li>
+            <li>${soma} é um número inteiro</li>
+        `);
+    }
 </script>

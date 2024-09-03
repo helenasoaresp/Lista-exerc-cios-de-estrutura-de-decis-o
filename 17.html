@@ -10,11 +10,30 @@
     */
 
     //ENTRADA
-
+    const preco = Number(prompt(`Informe o preço do produto: `));
     
     //PROCESSAMENTO
+    if (preco <= 280) {
+    const porcentagem = preco * 0.2;
+    const aumento = preco + porcentagem;
+        alert(`O aumento foi de: R$${aumento}`);
+    }
+    else if (preco <= 700) {
+        const porcentagem = preco * 0.15;
+    const aumento = preco + porcentagem;
+    alert(`O aumento foi de: R$${aumento}`);
+    }
+    else if (preco <= 1500) {
+    const porcentagem = preco * 0.1;
+    const aumento = preco + porcentagem;
+        alert(`O aumento foi de: R$${aumento}`);
+    }
+    else if (preco > 1500) {
+    const porcentagem = preco * 0.05;
+    const aumento = preco + porcentagem;
+        alert(`O aumento foi de: R$${aumento}`);
+    }
 
-    
     //SAÍDA
 
 </script>

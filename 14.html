@@ -11,43 +11,24 @@
 
     //ENTRADA
 
-    const numeroUm = Number(prompt("Diga um número"))
-    const numeroDois = Number(prompt("Diga um número"))
-    const operacao = prompt("Diga uma operacao matematica")
+    const peso  = Number(prompt("Informe seu peso: "));
+    const altura = Number(prompt("Informe sua altura (Em metros: )"));
 
-    let calculo
-    let inteiro
- 
-    if (operacao == "x") {
-        calculo = numeroUm * numeroDois;
-    } else if (operacao == "+") {
-        calculo = numeroUm + numeroDois;
-    } else if (operacao == "-") {
-        calculo = numeroUm - numeroDois;
-    } else if (operacao == "÷") {
-        calculo = numeroUm / numeroDois;
-    };
-
-    const validar = Math.ceil(calculo)
-    if (validar == calculo) {
-        inteiro = "inteiro"
-    } else {
-        inteiro = "decimal"
-    };
-
-    const validarDois = (2 *(Math.ceil(calculo / 2))) - calculo ;
-    if (validarDois == 0) {
-        par = "par"
-    } else {
-        par = "ímpar"
-    };
-
-    alert(`O resultado ficou: ${calculo}
-    Esse número é ${par}
-    Esse número é ${inteiro}`);
-
-
+    //PROCESSAMENTO
+    const imc = peso / altura ** 2
     
     //SAÍDA
+    if (imc <= 18.5) {
+        alert(`Subpeso`);
+    }
+    else if (imc <= 25.0) {
+        alert(`Peso normal`);
+    }
+    else if (imc <= 30.0) {
+        alert(`Sobrepeso`);
+    }
+    else {
+        alert(`Obeso`);
+    }
 
 </script>
