@@ -12,15 +12,16 @@
     //PROCESSAMENTO
     let numero3 = numero1;
     numero1 = numero2;
+    numero2 = numero3
 
     //SAÍDA
-    if (numero1 === numero2) {
+    if (numero1 == numero2) {
         alert(`A troca dos números não é necessária`);
     }
 
     else {
-    alert(`Antes o número 1 era: ${numero3}, Depois virou: ${numero2}` );
-    alert(`Antes o número 2 era: ${numero2}, Depois virou: ${numero3}` );
+    alert(`Antes o número 1 era: ${numero2}, Depois virou: ${numero1}` );
+    alert(`Antes o número 2 era: ${numero1}, Depois virou: ${numero2}` );
     }
 
 </script>

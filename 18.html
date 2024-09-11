@@ -12,34 +12,39 @@
     //PROCESSAMENTO
 
     //SAÍDA
-        if (hemisferio === "Norte" || hemisferio === "norte") {
-        if (mesAtual >= 3 && mesAtual <= 5);
-        alert(`É primavera`);
+    if (mes < 1 || mes > 12) {
+        alert(`Inválido!`);
 
-    } else if (mesAtual >= 6 && mesAtual <= 8) {
-        alert(`É verão`);
+    } else if (hemisferio == "Norte" || hemisferio == "norte") {
+        if (mes >= 3 && mes <= 5) {
+            alert(`É primavera`);
 
-    } else if (mesAtual >= 9 && mesAtual <= 11) {
-        alert(`É outono`);
+        } else if (mes >= 6 && mes <= 8) {
+            alert(`É verão`);
 
-    } else {
-        alert(`É inverno`);
+        } else if (mes >= 9 && mes <= 11) {
+            alert(`É outono`);
 
-    }
+        } else {
+            alert(`É inverno`);
 
-    if (hemisferio === "Sul" || hemisferio === "sul") {
-        if (mesAtual >= 3 && mesAtual <= 5);
-        alert(`É outono`);
+        }
+    };
 
-    } else if (mesAtual >= 6 && mesAtual <= 8) {
-        alert(`É inverno`);
+    if (hemisferio == "Sul" || hemisferio == "sul") {
+        if (mes >= 3 && mes <= 5) {
+            alert(`É outono`);
 
-    } else if (mesAtual >= 9 && mesAtual <= 11) {
-        alert(`É primavera`);
+        } else if (mes >= 6 && mes <= 8) {
+            alert(`É inverno`);
 
-    } else {
-        alert(`É inverno`);
+        } else if (mes >= 9 && mes <= 11) {
+            alert(`É primavera`);
 
-    }
+        } else {
+            alert(`É inverno`);
+        }
+
+    };
 
 </script>
